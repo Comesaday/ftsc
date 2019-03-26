@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/test.js" ></script>
+		<title></title>
+		<script>
+			function iframeLoad()
+			{
+			   	var ifm= document.getElementById("iframe");   
+			 	var subWeb = document.frames ? document.frames["iframe"].document : ifm.contentDocument;   
+				if(ifm != null && subWeb != null) {
+					document.getElementById("iframe").style.height=subWeb.body.scrollHeight+20+"px";
+				}   
+			}
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<div class="header">
+				<div class="head">
+					<a class="logo"></a>
+					<div class="login">
+						<ul>
+							<li><a id="login" href="login.html" target="right">用户登陆</a></li>
+							<li><a id="reg" href="regist.html" target="right">用户注册</a></li>
+							<li><a id="my" href="mycenter.html" target="right">个人中心</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="nav">
+				<div class="subnav">
+					<ul>
+						<li><a id="index" href="index.html">网站首页</a></li>
+						<li><a id="susc" href="list.html" target="right">果树认购</a></li>
+						<li><a id="us" href="aboutus.html" target="right">关于我们</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="box">
+				<div class="innerbox">
+					
+				</div>
+			</div>
+			<div class="location">
+				<div class="local">
+					<span>当前位置： 主页  > 果园信息</span>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="main">
+				<div class="innermain">
+					<div class="slide">
+						<h2 style="margin: 0;">果园风采</h2>
+						<ul class="org" style="width: 100%;height: 150px;">
+							<li><a href="info.html" target="right">果园全景</a></li>
+						</ul>
+						<h2>果树认购</h2>
+						<ul class="catagory">
+							<li><a href="list.html" target="right">苹果</a></li>
+							<li><a href="#">苹果</a></li>
+							<li><a href="#">苹果</a></li>
+							<li><a href="#">苹果</a></li>
+							<li><a href="#">苹果</a></li>
+						</ul>
+						<h2>联系我们</h2>
+						<div class="about">
+							<p style="padding-top: 5px;">联系人：CHEN</p>
+							<p>电话：15037295999</p>
+							<p>邮箱：15037621476@163.com</p>
+							<p>地址：河南省平顶山市</p>
+							<p>网址：<a href="http://www.comesaday.cn">www.comesaday.cn</a></p>
+						</div>
+						<div class="manage">
+							<a href="http://www.comesaday.cn">管理员登陆</a>
+						</div>
+					</div>
+					<div class="content">
+						<iframe id="iframe" onload="iframeLoad()" scrolling="no" rameborder="0" name="right" width="100%" height="100%" frameborder="0" src="info.html"></iframe>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="footer">
+				<div class="foot">
+					<p style="padding-top: 10px;">友情链接：<a href="http://www.baidu.com">百度</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="http://www.pdsu.edu.cn">平顶山学院</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="http://www.pdsu.edu.cn">计算机学院</a></p>
+					<p>版权所有©毕业设计 By CHEN  如有任何建议或问题请与本人联系</p>
+					<p>邮箱：cw_vscode0101@126.com  QQ：931716599</p>
+					<p style="padding-bottom: 10px;">地址：河南省平顶山市平顶山学院计算机学院</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

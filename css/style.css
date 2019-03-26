@@ -1,0 +1,435 @@
+/**主页面**/
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 14px; 
+	font-family: 'arial','STHeiti','Microsoft YaHei','宋体';
+	text-align: center;
+	background: #F2F2F2;
+}
+.clear{
+	clear: both;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	width: auto;
+	list-style: none;
+}
+#container{
+	height: auto;	
+}
+#container .header{
+	width: 100%;
+}
+.header .head{
+	margin: 0 auto;
+	width: 1140px;
+	height: 90px;
+	background: #FFFFFF;
+}
+.head .logo{
+	width: 40%;
+	height: 90px;
+	float: left;
+	background-image: url(../img/logo.png);
+	background-size:100% 100%;
+}
+.head .login{
+	text-align: right;
+	float: right;
+	width: 20%;
+	height: 90px;
+}
+.login ul li{
+	float: left;
+	height: 90px;
+	line-height: 140px;
+	padding-left: 12px;
+}
+#container .nav{
+	width: 100%;
+}
+.nav .subnav{
+	margin: 0 auto;
+	width: 1140px;
+	height: 40px;
+	background: #308ACE;
+}
+.subnav ul li{
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	padding: 0 20px;
+}
+.subnav ul li a{
+	color: #FFFFFF;
+}
+#container .box{
+	width: 100%;
+}
+.box .innerbox{
+	margin: 0 auto;
+	height: 200px;
+	width: 1140px;
+	background: url(../img/b4.jpg);
+	background-size:100% 100%;
+}
+#container .location{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+.location .local{
+	margin: 5px auto 0;
+	width: 1140px;
+	text-align: left;
+	background: #308ACE;
+}
+.local span{
+	display: block;
+	float: left;
+	line-height: 32px;
+	width: 74%;
+	margin-left: 0.8%;
+	padding-left: 18px;
+	color: #FFFFFF;
+}
+#container .main{
+	width: 100%;
+}
+.main .innermain{
+	margin: 0 auto;
+	width: 1140px;
+	height: auto;
+}
+.innermain .slide{
+	float: left;
+	width: 23%;
+	margin-top: 20px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border: 1px solid #DDDDDD;
+}
+.slide h2{
+	text-align: left;
+	padding: 7px 22px;
+	font-size: 15px;
+	margin-top: 2px;
+	margin-bottom: 0;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	background: url(../img/title.jpg);
+	color: white;
+}
+.slide ul{
+	padding:5px 0 20px 0;
+	border-bottom: 1px solid #CBCBCB;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	margin-bottom: 10px;
+	background: #FFFFFF;
+}
+.slide ul li{
+	text-align: left;
+	margin: 2px 20px;
+	padding: 4px 20px;
+	border-radius: 3px;
+	border-bottom: 1px dashed gray;
+}
+.slide .about{
+	text-align: left;
+	padding: 3px 25px 15px 25px;;
+	border-bottom: 1px solid #CBCBCB;
+	margin-top: 1px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	background: #FFFFFF;
+}
+.about p{
+	border-bottom: 1px dashed gray;
+}
+p{
+	font-size: 15px;
+	line-height: 30px;
+	margin: 0;
+}
+.slide .manage{
+	width: 100%;
+	height: auto;
+	margin-top: 5px;
+}
+.manage a{
+	display: block;
+	font-size: 20px;
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	background-image:url(../img/manage.jpg) ;
+	background-size:100% 100%;
+	border-radius: 1px;
+}
+.innermain .content{
+	float: right;
+	width: 76%;
+}
+
+#container .footer{
+	width: 100%;
+	margin-top: 20px;
+}
+.footer .foot{
+	margin: 0 auto;
+	width: 1140px;
+	height: auto;
+	border-top: 2px solid #308ACE;
+	background: #FFFFFF;
+}
+
+/*******info页面******/
+.main-area{
+	margin: 20px 0 0 0;
+	height: auto;
+	border: 1px solid #DDDDDD;
+	border-radius: 3px;
+	padding-bottom: 1px;
+}
+.info h2{
+	background-image: url(../img/title2.jpg);
+	text-align: left;
+	padding: 4px 33px;
+	margin: 0;
+	font-size: 15px;
+	border-radius: 3px;
+	color: white;
+}
+.info .detail{
+	border-bottom: 1px solid #C9D1D6;
+	margin: 0 0 5px 0;
+	border-radius: 3px;
+	word-wrap:break-word;
+    word-break:break-all;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background: #FFFFFF;
+}
+.info .detail video{
+	float: left;
+	width: 30%;
+	height: auto;
+	margin: 15px 0 10px 7px;
+}
+.info .produce{
+	float: right;
+	width: 67%;
+	text-align: left;
+	margin: 10px 10px 0 0;
+	
+}
+.info .detail p{
+	line-height: 25px;
+	font-size: 14px;
+}
+.info .picture{
+	border-bottom: 1px solid #C9D1D6;
+	margin: 0 0 5px 0;
+	border-radius: 3px;
+	background: #FFFFFF;
+}
+.picture .p1{
+	width: 130px;
+	height: auto;
+	float: left;
+	margin: 10px 0 10px 11px;
+}
+.p1 img{
+	width: 100%;
+	height: 160px;
+	border-radius: 5px;
+}
+.info .comment{
+	border-bottom: 1px solid #C9D1D6;
+	border-radius: 3px;
+	padding: 5px 0 20px 0;
+	background: #FFFFFF;
+}
+.info .comment ul li{
+	text-align: left;
+	padding: 5px 0 5px 20px;
+	line-height: 20px;
+	border-bottom: 1px dashed gray;
+	margin: 0 20px 0 20px;
+}
+/*******登录页面*****/
+.text{
+	background: #FFFFFF;
+}
+.text table{
+	width: 100%;
+	height: auto;
+	text-align: left;
+}
+.text table tbody{
+	display: block;
+	padding: 35px 0;
+}
+.text table tr th{
+	width: 100px;
+	text-align: right;
+	font-weight: normal;
+	color: #333;
+	float: left;
+	padding: 5px 30px 5px 5px;
+}
+.text table tr td{
+	width: 100px;
+	float: left;
+}
+.text input[type="text"]{
+	width: 180px;
+	padding: 5px 30px 5px 5px;
+	border-radius: 1px;
+}
+.text input[type="button"]{
+	padding: 5px 50px 5px 50px;
+	border-radius: 1px;
+	background: #308ACE;
+}
+/**********list页面********/
+.treelist{
+	background: #FFFFFF;
+}
+.main-area .treelist .search{
+	width: 100%;
+	height: 30px;
+	text-align: left;
+	font-size: 12px;
+	margin-top: 1px;
+	padding: 10px 0;
+	background: #F2F2F2;
+	border-bottom: 1px solid #DDDDDD;
+}
+.search span{
+	line-height: 30px;
+}
+.search select{
+	width: 200px;
+	padding: 2px 5px;
+	border-radius: 2px;
+}
+.search a{
+	margin-left: 15px;
+	border-radius: 1px;
+	padding: 6px 20px;
+	background: #308ACE;
+	border: 1px solid #DEDEDE;
+}
+.title{
+	margin: 0;
+	padding: 5px 10px;
+	background: #48A2E5;
+	text-align: left;
+	font-size: 18px;
+}
+
+.main-area .treelist .list{
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+}
+ .treelist .list .tree{
+	height: 220px;
+	width: 18%;
+	margin: 0 8px;
+	float: left;
+}
+.tree a{
+	display: block;
+	width: 100%;
+	height: 170px;
+	background: url(../img/b4.jpg);
+}
+.tree span{
+	display: block;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+.main-area .treelist .page{
+	width: 100%;
+	margin: 10px auto;
+	padding: 5px 0;
+	border-top: 1px solid #DDDDDD;
+}
+.page ul{
+	float: right;
+	margin-right: 30px;
+}
+.page ul li{
+	float: left;
+	margin-left: 10px;
+	line-height: 30px;
+	font-size: 17px;
+}
+/*************aboutus页面*************/
+.aboutus{
+	background: #FFFFFF;
+}
+.main-area .aboutus title{
+	margin: 0;
+	padding: 5px 10px;
+	background: #48A2E5;
+	text-align: left;
+	font-size: 18px;
+}
+.aboutus .us{
+	padding: 20px 30px;
+}
+.us p{
+	font-size: 14px;
+	line-height: 24px;
+}
+/*******个人中心********/
+.myself .menu{
+	width: 100%;
+	height: 35px;
+}
+.menu ul{
+	list-style: none;
+}
+.menu ul li{
+	float: left;
+	margin-left: 20px;
+	line-height: 35px;
+}
+/*************个人信息**************/
+.main-area .myinfo{
+	width: 100%;
+	height: auto;
+}
+.myinfo .basic{
+	text-align: left;
+	padding: 30px 35px;
+}
+.basic p{
+	font-size: 13px;
+	line-height: 25px;
+}
+/*************订单信息**************/
+.main-area .myorder{
+	width: 100%;
+	height: auto;
+}
+.myorder .order{
+	text-align: left;
+	padding: 30px 35px;
+}
+.order p{
+	font-size: 13px;
+	line-height: 25px;
+}
+/*************认购信息**************/
+/*************快递信息**************/
